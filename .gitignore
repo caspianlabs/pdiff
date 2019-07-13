@@ -1,0 +1,5 @@
+venv
+.env
+*.png
+*.pdf
+__pycache__
