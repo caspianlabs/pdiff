@@ -15,7 +15,6 @@ class Auth:
     CLIENT_ID = os.environ.get('G_CLIENT_ID')
     CLIENT_SECRET = os.environ.get('G_CLIENT_SECRET')
     REDIRECT_URI = os.environ.get('G_REDIRECT_URI')
-    REDIRECT_URI = 'http://localhost:5000/gCallback'
     AUTH_URI = 'https://accounts.google.com/o/oauth2/auth'
     TOKEN_URI = 'https://accounts.google.com/o/oauth2/token'
     USER_INFO = 'https://www.googleapis.com/userinfo/v2/me'
