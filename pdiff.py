@@ -137,6 +137,7 @@ def callback():
         return 'Count not fetch your information.'
 
 @app.route('/compare')
+@login_required
 def compare():
     filename = request.args.get('filename')
     return render_template('output.html', filename=filename)
