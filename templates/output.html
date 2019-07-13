@@ -1,11 +1,13 @@
-<h1>
-    PDF Compare
-</h1>
+{% extends 'index.html' %}
 
-<a href="{{ url_for('index') }}">Home</a>
+{% block content %}
+<div class="container content">
+        <h2>
+                File Comparison Output
+        </h2>
 
-<h2>
-    File Comparison Output
-</h2>
+        <hr />
 
-<img src={{ url_for('static', filename=filename) }}>
+        <img src={{ url_for('static', filename=filename) }}>
+</div>
+{% endblock %}
